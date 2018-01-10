@@ -32,7 +32,3 @@ function neo_gallery_shortcode($attr) {
     $output .= "</div>";
     return $output;
 }
-
-?>
-
-
