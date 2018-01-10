@@ -1,0 +1,45 @@
+.header{
+	background: no-repeat center center cover;
+	background-color: $darkgray;
+	color: $white;
+	min-height: 300px;
+	transition: all 0.7s;
+	h1{
+		color: $white;
+        text-shadow: 0 0 8px $white;
+	}
+	h2{
+		margin-top: -10px;
+		color: $white;
+		text-align: left;
+	}
+	&.home{
+		min-height: 600px;
+		@media (max-width: 768px){
+			min-height: auto;
+			.info{
+				display: block;
+				padding: 10px 10px 90px 10px !important;
+			}
+		}
+	}
+	.info{
+		padding: 80px 10px 40px;
+		.description{
+			display: block;
+			max-width: 650px;
+			p{
+			}
+			a{
+				color: $lightenc;
+				&:hover,&:hover{
+					color: $primaryc;
+				}
+			}
+		}
+		.btn-contact{
+			display: inline-block;
+			margin-top: 10px;
+		}
+	}
+}

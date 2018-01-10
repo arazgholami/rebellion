@@ -1,0 +1,32 @@
+.navigation{
+	display: block;
+    padding: 20px 2px;
+	a{
+		display: inline-block;
+		padding: 5px 10px;
+		background: $white;
+		margin-right: 4px;
+        border-left: 4px solid $exdarkenc;
+        &:hover{
+            background: $primaryc;
+            color: $white;
+            text-decoration: none;
+        }
+        &:last-child{
+            float: left;
+        }
+	}
+	.prev{
+		float: left;
+	}	 
+}
+.comments{
+	.navigation{
+		display: block;
+		margin: 0;
+        padding: 10px 0 0;
+		.prev{
+			float: left;
+		}	
+	}	
+}

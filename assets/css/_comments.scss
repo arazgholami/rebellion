@@ -1,0 +1,74 @@
+			.comments{
+				margin: 5px 0 0;
+				.commentitem{
+                    background: $white;
+                    padding: 10px 15px;
+					.author{
+						display: block;
+					}
+					p{
+						margin: 0;
+					}
+					i{
+						color: $gray;
+    					font-size: 0.9rem;
+					}
+				}
+			}
+			.leave-comment{
+				.textarea{
+					border: 1px solid $borderc;
+					border-bottom: none;
+				    padding: 15px 15px 0;
+				    width: 100%;
+				    min-height: 90px; 
+				    margin-bottom: -5px;
+				    resize: none;
+					transition: all 0.2s;
+				    &:hover,&:focus,&:active{
+				    	outline: none !important;
+				    	box-shadow: none !important;
+				    }
+				}
+				.inputs{
+					display: block;
+					border: 1px solid $borderc;
+					border-top: none;
+					padding-bottom: 10px;
+					border-radius: 0 0 5px 5px;
+					transition: all 0.2s;
+                    background: $white;
+					.textbox{
+						border: none;
+					    border-bottom: 1px solid white;
+					    padding: 2px 5px;
+					    margin-left: 10px;
+					    transition: all 0.2s;
+					    max-width: 260px;
+					    &:hover,&:focus{
+					    	border-bottom: 1px solid $primaryc;
+					    	outline: none;
+					    }
+					}
+				}
+				&:hover,&:focus,&:active{
+					.textarea{
+				    	border: 1px solid $primaryc;
+				    	border-bottom: none;
+				    }
+				    .inputs{
+				    	border: 1px solid $primaryc;
+				    	border-top: none;
+				    	outline: none;
+				    }
+				}
+
+			}
+			.form-submit{
+				margin: 10px 0 0 0;
+                
+				.submit{
+					@extend .btn;
+                    border-radius: 0;
+				}
+			}

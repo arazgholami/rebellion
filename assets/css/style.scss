@@ -1,0 +1,118 @@
+/*!
+Theme Name: Rebellion
+Theme URI: http://arazgholami.com/themes/rebellion/
+Author: Araz Gholami
+Author URI: http://arazgholami.com/
+Description: A minimal & moden wordpress theme
+Version: 1.0
+License: GNU General Public License v3.0
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Text Domain: Rebellion
+Tags: one-column, right-sidebar, accessibility-ready, featured-images, rtl-language-support, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+||==================================================================================||
+||    By Araz Gholami (@arazgholami)                                                ||
+||    Stay in touch <contact@arazgholami.com>                                       ||
+||    GNU General Public License v3.0                                               ||
+||==================================================================================||
+*/        
+
+//Extentions
+@import 'imports/bootstrap';
+@import 'imports/fontello';
+@import 'imports/colors';
+@import 'imports/typography';
+@import 'imports/mixins';
+
+//Pages
+@import 'pages/wide';
+@import 'pages/pay';
+@import 'pages/work';
+@import 'pages/gallery';
+
+//Header
+@import 'header';
+//Navbar
+@import 'navbar';
+
+html{
+	cursor: default;
+}
+
+body{
+    background-color: #eee;
+}
+
+.content{
+    .container{
+        padding: 0 2px;
+    } 
+	//Sidebar
+	@import 'sidebar';
+	.attachment-post-thumbnail{
+		border-radius: 10px;
+		width: 100%;
+		height: 100%;
+		margin-bottom: 15px;
+	}
+
+	@import 'pages/archive';
+
+	.posts{
+        padding: 0;
+		.item{
+            background: #fff;
+            padding: 10px 15px 15px;
+            margin: 10px 0;
+			.title{
+                display: block;
+                margin-left: -15px;
+                border-left: 4px solid $exdarkenc;
+                padding: 0 0 11px 11px;
+                h2{margin: 0;}
+				&:hover,&:focus{
+				    text-decoration: none;
+				    & *{
+				      text-decoration: none;
+				    }
+				}
+			}
+			.context{
+				display: block;
+				p{
+					line-height: 1.7;
+				}
+				i{
+					display: inline-block;
+					color: $darkgray;
+					margin: 5px 5px 0 0;
+
+				}
+				.meta{
+					display: block;
+					margin-top: 10px;
+					margin-bottom: 15px;
+					.date,i,.location{
+						color: $darkgray;
+						font-style: italic;
+					}
+				}
+				.code{
+
+				}
+			}
+			
+			
+		}
+        //Search
+			@import 'search';
+			//Comments & CommentForm
+			@import 'comments';
+			//Navigation
+		@import 'navigation';
+	}
+}
+//Footer
+@import 'footer';
+@import 'rtl';

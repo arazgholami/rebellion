@@ -1,0 +1,44 @@
+	.sidebar{
+		padding: 10px 10px 0;
+		.item{
+			margin-bottom: 15px;
+			p{
+				margin: 10px;
+			}
+			img{
+				width: 100%;
+			}
+		}
+		.subscribe{
+			padding: 10px;
+			a{
+				color: $exdarkenc;
+				&:hover{
+					color: $darkenc;
+				}
+			}
+			p{
+				margin: 5px 0 10px;
+			}
+			.email{
+				border: 1px solid $borderc;
+			    padding: 5px 10px 7px;
+			    transition: all 0.2s;
+			    width: 100%; height: 36px;
+			    &:hover,&:focus{
+			    	border: 1px solid $primaryc;
+			    	outline: none;
+			    }
+			}
+			.btn{
+				float: right;
+				border-radius: 0 5px 5px 0;
+			}
+			.nocharge{
+				color: $darkgray;
+				display: block;
+				margin: 5px 0 0 2px;
+				font-size: 12px;
+			}
+		}
+	}

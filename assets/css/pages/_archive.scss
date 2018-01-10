@@ -1,0 +1,20 @@
+//ArchivePage
+	.sya_yearcount{
+		color: $darkgray;
+		&:hover{
+			color: $primaryc; 
+		}
+	}
+	.sya_postcontent{
+        a{
+            color: $black;
+            transition: all 0.2s;
+            &:hover{
+                color: $primaryc;
+            }
+        }
+		.label{
+			background: $darkgray;
+			padding: 3px 6px;
+		}
+	}

@@ -1,0 +1,134 @@
+::-moz-selection { 
+    background: $darkenc;
+    color: $white;
+    text-decoration-color: $white;
+}
+::selection { 
+    background: $darkenc;
+    color: $white;
+    text-decoration-color: $white;
+}
+
+.clearfix{
+	&:after {
+	  visibility: hidden;
+	  display: block;
+	  font-size: 0;
+	  content: " ";
+	  clear: both;
+	  height: 0;
+	}
+}
+
+.btn{
+	background: $black;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: $white;
+	transition: all 0.2s ease;
+	border: none;
+	height: 36px;
+	&:hover,&:focus{
+		color: $white;
+		background: $darkenc;
+		text-decoration: none;
+		outline: none;
+		color: $white;
+	}
+	&:active{
+		background: $exdarkenc;
+		padding: 6px 14px 4px 16px;
+		outline: none;
+		color: $white; 
+	}
+}
+
+
+.btn-contact{
+	background: $exdarkenc;
+	border-radius: 2px;
+	color: $darkwhite;
+	position: relative;
+    border-left: 0px solid $white;
+	&:hover,&:focus{
+		background: $lightenc;
+		color: #eee;
+        padding-left: 15px; 
+        border-left: 4px solid $white;
+
+	}
+	&:active{
+		background: $darkenc;
+	}
+}
+
+.btn-download{
+	height: 100%;
+	border-radius: 5px;
+	padding: 5px 15px;
+	span{
+		display: block;
+		margin-bottom: -8px;
+	}
+	i{
+		display: inline-block;
+		font-size: 10px;
+		color: $darkwhite !important;
+	}
+	&:hover,&:focus{
+		*{text-decoration: none !important;}
+	}
+}
+
+.btn-pay{
+	height: 100%;
+	border-radius: 5px;
+	padding: 5px 15px;
+	span{
+		display: block;
+		margin-bottom: -8px;
+	}
+	i{
+		display: inline-block;
+		font-size: 10px;
+		color: $darkwhite !important;
+	}
+	&:hover,&:focus{
+		*{text-decoration: none !important;}
+	}
+}
+
+.disabled{
+	background: $darkgray;
+	cursor: not-allowed;
+}
+
+
+a{
+    color: $exdarkenc;
+    transition: all 0.2s;
+    &:hover,&:focus{
+        color: $primaryc; 
+    }
+    &:active{
+        color: $darkenc;
+    }
+}
+
+.label{
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	margin-right: 5px;
+	background: $primaryc;
+	color: $white;
+	font-size: 0.8rem;
+	a{
+		color: $white;
+		letter-spacing: -1px;
+		&:hover{
+			color: $darkwhite;
+			text-decoration: none;
+		}
+	}
+}

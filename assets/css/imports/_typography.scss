@@ -1,0 +1,173 @@
+//Typokit
+//v0.1
+
+//Fonts
+// @font-face {
+//     font-family: 'Open Sans';
+//     src: url('assets/fonts/opensans.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Iran';
+//     src: url('assets/fonts/iran.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//   font-family: 'fontello';
+//   src: url('assets/fonts/fontello.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+    font-family: 'ArazGholami';
+    src: url('assets/fonts/arazgholami.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html{
+  text-rendering: optimizeLegibility;
+  vertical-align: baseline;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  font-family: "ArazGholami", Helvetica, Arial, sans-serif;
+}
+
+h1,h2,h3{
+  letter-spacing: -2px;
+  font-family: "ArazGholami", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-weight: normal;
+}
+
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3.998em;
+  letter-spacing: -4px;
+}
+
+h2 {
+  font-size: 1.999rem; /*2.827em;*/ 
+  margin-bottom: 1rem;
+}
+
+h3 {font-size: 1.414rem;
+  margin-bottom: 0.707rem;
+  letter-spacing: -1px;
+}
+
+
+p{
+  font-family: "ArazGholami", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.414;
+  margin: 0 0 1rem 0;
+}
+
+a{
+  font-family: "ArazGholami", Helvetica, Arial, sans-serif;
+  outline: none;
+  &:hover,&:focus,{
+    text-decoration: underline;
+    outline: none;
+    & *{
+      text-decoration: underline;
+      outline: none;
+    }
+  }
+}
+
+div,span,section,input{
+  font-family: "ArazGholami", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+
+
+.context{
+  .order{
+    margin: -10px 0 -30px !important;
+    display: block !important;
+  }
+  blockquote{
+    border: none;
+    font-size: inherit;
+    padding: 1px 10px 5px;
+    margin: 2px 0;
+    p{
+      margin: 0;
+      font-style: italic;
+    }
+    &:before {
+      color: $darkgray;
+      content: "\201D";
+      font-size: 1.999rem;
+      line-height: 0.1em;
+      vertical-align: -0.4em;
+      font-family: serif;
+    }
+  }
+    
+    
+    
+    
+    
+    p{line-height: 1.618;}
+    blockquote{
+      border-left: 5px solid $gray;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 1em;
+      line-height: 1.7; 
+      li{
+        padding-left: 1.214em;  
+        &::before {
+          content: "-";
+          color: $darkgray;
+          margin-right: 10px;
+          float: left;
+        }
+      }
+    }
+    .firstletter{
+      float: left;
+      font-size: 2.4rem;
+      line-height: 1;
+      padding-right: 10px;
+      text-shadow: 1px 1px 8px $darkgray;
+      font-family: georgia,serif;
+
+    }
+    
+    
+    
+    
+}
+
+.code{
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  display:block;
+  padding:10.5px;
+  margin:0 0 11px;
+  font-size:15px;
+  line-height:1.42857143;
+  word-break:break-all;
+  word-wrap:break-word;
+  background: #888;
+  color: $white;
+  text-align: left;
+  direction: ltr;
+  border-radius: 2px;
+  padding-left: 30px;
+  border: none;
+}

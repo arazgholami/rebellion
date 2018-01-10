@@ -1,0 +1,25 @@
+.footer{
+	margin: 10px 0 40px;
+	@media (max-width: 768px) {
+		padding-left: 20px;
+	}
+	.footer-menu{
+		list-style: none;
+		padding: 0;
+		li{
+			display: inline-block;
+			a{
+				padding: 0 10px 0 0;
+			}
+		}
+	}
+	.copyright{
+		float: left;
+		margin-right: 10px;
+		i{
+			display: block;
+			font-size: 0.778rem;
+			color: $darkgray;
+		}
+	}
+}
