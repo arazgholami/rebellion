@@ -86,5 +86,3 @@ function rtlparags($content) {
 
 }
 add_filter('the_content', 'rtlparags');
-
-?>

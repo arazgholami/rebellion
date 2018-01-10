@@ -32,6 +32,3 @@
        if(isRTL(get_the_title())) return "، ";
        else return ", ";
     }
-
-    
-?>
