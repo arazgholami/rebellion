@@ -1,4 +1,23 @@
 <?php
+/**
+ * NeoGallery
+ *
+ * @package     NeoGalleryPackage
+ * @author      Araz Gholami
+ * @copyright   2017 Araz Gholami
+ * @license     GPL-2.0+
+ *
+ * @wordpress-plugin
+ * Plugin Name: NeoGallery
+ * Plugin URI:  https://arazgholami.com/work/wp/plugins/neogallery
+ * Description: Replace WP Old-school gallery with Modern Responsive Gallery
+ * Version:     0.1
+ * Author:      Araz Gholami
+ * Author URI:  https://arazgholami.com
+ * Text Domain: neogallery
+ * License:     GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ */
 
 remove_shortcode('gallery', 'gallery_shortcode');
 add_shortcode('gallery', 'neo_gallery_shortcode');

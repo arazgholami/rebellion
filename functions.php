@@ -1,6 +1,6 @@
 <?php
 
-//include('functions/gallery.php');
+include('functions/gallery.php');
 include('functions/dropcap.php');
 include('functions/lastupdate.php');
 include('functions/tortl.php');
