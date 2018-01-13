@@ -16,3 +16,19 @@ GPL v3.0
 
 ## Contact
 Araz Gholami contact@arazgholami.com 
+
+## Changelogs
+### v1.3 (Dreaming)
+- Add wordpress requirments for publishing in wordpress.org
+### v1.2 (To Do)
+- More options in options page
+- Extract functions as separate plugins
+- Leave-Comment layout based on post direction
+### v1.1
+- Added Optional contact button
+- Fixed responsive layout bugs
+### v1.0
+- Minimal, Moden and Responsive Layout
+- Perfect typography for both rtl and ltr lanuages
+- Minimum size & minimum HTTP request
+- Simple Option page for customization
