@@ -41,9 +41,7 @@ html{
 }
 
 .content{
-    .container{
-        padding: 0 2px;
-    } 
+     
 	//Sidebar
 	@import 'sidebar';
 	.attachment-post-thumbnail{
@@ -61,6 +59,9 @@ html{
             background: #fff;
             padding: 10px 15px 15px;
             margin: 10px 0;
+            @media (max-width: 480px){
+                padding: 10px 0 15px !important; 
+            }
 			.title{
                 display: block;
                 margin-left: -15px;

@@ -7,8 +7,8 @@
                         <div style="overflow: hidden;">
                            <input class="email tnp-email" type="email" name="ne" required="" placeholder="Your Email">
                         </div>
+                        <span class="nocharge"> No charge. Unsubscribe anytime.</span>
                     </form>
-                   <span class="nocharge"> No charge. Unsubscribe anytime.</span>
                 </div>
                 <?php dynamic_sidebar( 'sidebar' ); ?>
             </div>
