@@ -49,10 +49,10 @@ h1,h2,h3{
 
 h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20vw;
+  font-size: 3.998rem;
   letter-spacing: -4px;
-  @media (min-width: 480px){
-    font-size: 3.998rem;
+  @media (max-width: 480px){
+    font-size: 3.4rem;
   }
     
 }

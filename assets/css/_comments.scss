@@ -25,6 +25,7 @@
 				    margin-bottom: -5px;
 				    resize: none;
 					transition: all 0.2s;
+                    border-radius: 5px 5px 0 0;
 				    &:hover,&:focus,&:active{
 				    	outline: none !important;
 				    	box-shadow: none !important;
@@ -69,6 +70,6 @@
                 
 				.submit{
 					@extend .btn;
-                    border-radius: 0;
+                    border-radius: 5px;
 				}
 			}
