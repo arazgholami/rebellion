@@ -80,14 +80,13 @@
                 if (is_home()) { ?>
                     <span class="description">
                     <?php echo get_option('description'); ?>
-<!--
-                        <p>I'm a designer &amp; programmer in Tabriz, Iran. Since 2004, I make creative &amp; useful softwares and apps for individuals, companies &amp; organizations focusing on offering a light &amp; fast experience while using products and services.</p>
-                        <p>I'm reading, writing, thinking, designing, coding &amp; learning all of the time and I share my daily notes in here. I'm in love with challenges &amp; adventures. Right <a href="<?php bloginfo('home'); ?>/now">Now</a> I work on some public utility projects. Know more about me in <a href="/manual">Manual</a></p>
-                        <p>Have an idea? Need my help? Or just wanna have a cup of coffee together? <br>
-                        Feel free to contact me for any reason.</p>
--->
                     </span>
-                    <a href="<?php bloginfo('home'); ?>/contact" class="btn btn-contact">Contact Me</a>
+                    
+                    <?php 
+                        if(get_option('contact')==1){
+                            echo "<a href=\"" . get_bloginfo('home') . "/contact\" class=\"btn btn-contact\">Contact Me</a>";
+                        }
+                    ?>   
                 <?php } 
                      else if (is_single()) { echo "<h2>Articles</h2>";}
                      else if (is_search()) { echo "<h2>Where there's a will, there's a way</h2>";}

@@ -67,7 +67,7 @@ function display_description_element()
 function display_contact_element()
 {
 	?>
-		<input type="checkbox" name="theme_layout" value="1" <?php checked(1, get_option('theme_layout'), true); ?>> 
+		<input type="checkbox" name="contact" value="1" <?php checked(1, get_option('contact'), true); ?>> 
 	<?php
 }
 function logo_display()
@@ -86,12 +86,12 @@ function display_theme_panel_fields()
 	
 	add_settings_field("title", "Title", "display_title_element", "theme-options", "section");
     add_settings_field("description", "Description", "display_description_element", "theme-options", "section");
-    add_settings_field("theme_layout", "Contact button?", "display_contact_element", "theme-options", "section");
+    add_settings_field("contact", "Contact button?", "display_contact_element", "theme-options", "section");
     add_settings_field("logo", "Header Background", "logo_display", "theme-options", "section");  
 
     register_setting("section", "title");
     register_setting("section", "description");
-    register_setting("section", "theme_layout");
+    register_setting("section", "contact");
     register_setting("section", "background");
     
     add_settings_section("section", "Header Options", null, "theme-options");

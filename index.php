@@ -18,7 +18,7 @@
                                 <!-- <a href="#" class="btn btn-contact btn-download clearfix"><span>Download</span><i>256kbps</i><i>16MB</i></a> -->
                                 <div class="meta">
                                     <span class="author"><?php echo (isRTL(get_the_title())) ? "آراز غلامی" : "Araz Gholami" ?></span><br>
-                                    <span class="date"><?php  (isRTL(get_the_title())) ? toRTL(get_the_time('l,j,m,Y')) : the_time('l, M jS, Y') ?>.</span>
+                                    <a href="<?php the_permalink() ?>"><span class="date"><?php  (isRTL(get_the_title())) ? toRTL(get_the_time('l,j,m,Y')) : the_time('l, M jS, Y') ?></span></a>
                                     <span class="location">
                                       <?php 
                                         if(get_post_meta($post->ID, 'Location', true)){

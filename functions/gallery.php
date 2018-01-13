@@ -1,7 +1,5 @@
 <?php
 
-
-
 remove_shortcode('gallery', 'gallery_shortcode');
 add_shortcode('gallery', 'neo_gallery_shortcode');
 function neo_gallery_shortcode($attr) {
