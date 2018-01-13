@@ -37,7 +37,7 @@
                             </div>
                         </section>
                         <?php endwhile; ?>
-                        <div class="navigation">
+                        <div class="navigation clearfix">
                             <?php posts_nav_link(' ', 'Next Posts', 'Previous Posts'); ?>
                         </div>
                      <?php else : ?>
