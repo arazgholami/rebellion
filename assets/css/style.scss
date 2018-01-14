@@ -57,11 +57,8 @@ html{
         padding: 0;
 		.item{
             background: #fff;
-            padding: 10px 15px 15px;
+            padding: 10px 0 15px;
             margin: 10px 0;
-            @media (max-width: 480px){
-                padding: 10px 0 15px !important; 
-            }
 			.title{
                 display: block;
                 margin-left: -10px;
