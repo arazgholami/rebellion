@@ -26,6 +26,7 @@ Araz Gholami contact@arazgholami.com
 - More options in options page
 - Extract functions as separate plugins
 - Leave-Comment layout based on post direction
+- Add subscription function
 ### v1.1
 - Added Optional contact button
 - Fixed responsive layout bugs
