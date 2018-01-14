@@ -1,6 +1,6 @@
 # Rebellion
 A minimal &amp; moden wordpress theme
-![Rebellion Screenshot](https://raw.githubusercontent.com/arazgholami/rebellion/blob/master/screenshot.png)
+![Screenshot](screenshot.png)
 ## How to Download
 checkout releases page https://github.com/arazgholami/rebellion/releases
 
