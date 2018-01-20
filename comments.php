@@ -27,6 +27,12 @@ if ( post_password_required() )
         <?php endif; ?>
 
                 <?php
+					if(is_user_logged_in()){
+						$close = '<div class="inputs"></div></div>';
+					}
+					else{
+						$close = '';
+					}
                    $args = array(
                           'id_form'           => '',
                           'id_submit'         => 'submit',                      
@@ -37,7 +43,8 @@ if ( post_password_required() )
 
                           'comment_field' =>  '
                           <div class="leave-comment">
-                          <textarea required class="textarea" name="comment" placeholder="What you think about this?" dir="auto"></textarea>',
+                          <textarea required class="textarea" name="comment" placeholder="What you think about this?" dir="auto"></textarea>
+						  '.$close,
 
                           'must_log_in' => '<p class="must-log-in">' .
                             sprintf(
