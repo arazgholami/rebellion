@@ -8,12 +8,27 @@
 //     font-weight: normal;
 //     font-style: normal;
 // }
-// @font-face {
-//     font-family: 'Iran';
-//     src: url('assets/fonts/iran.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@font-face {
+  font-family: 'Iran';
+  src: url('assets/fonts/iransans/OpenSans-Regular-webfont.eot');
+  src: url('assets/fonts/iransans/OpenSans-Regular-webfont.eot') format('embedded-opentype'),
+       url('assets/fonts/iransans/OpenSans-Regular-webfont.woff2') format('woff2'),
+       url('assets/fonts/iransans/OpenSans-Regular-webfont.woff') format('woff'),
+       url('assets/fonts/iransans/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('assets/fonts/iransans/OpenSans-Regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('assets/fonts/opensans/OpenSans-Regular-webfont.eot');
+  src: url('assets/fonts/opensans/OpenSans-Regular-webfont.eot') format('embedded-opentype'),
+       url('assets/fonts/opensans/OpenSans-Regular-webfont.woff2') format('woff2'),
+       url('assets/fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('assets/fonts/opensans/OpenSans-Regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 // @font-face {
 //   font-family: 'fontello';
 //   src: url('assets/fonts/fontello.woff') format('woff');
@@ -21,12 +36,12 @@
 //   font-style: normal;
 // }
 
-@font-face {
-    font-family: 'ArazGholami';
-    src: url('assets/fonts/arazgholami.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+//@font-face {
+//    font-family: 'ArazGholami';
+//    src: url('assets/fonts/arazgholami.woff') format('woff');
+//    font-weight: normal;
+//    font-style: normal;
+//}
 
 
 html{
@@ -36,12 +51,12 @@ html{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 100%;
-  font-family: "ArazGholami", Helvetica, Arial, sans-serif;
+  font-family: "OpenSans","Iran", Helvetica, Arial, sans-serif;
 }
 
 h1,h2,h3{
   letter-spacing: -2px;
-  font-family: "ArazGholami", Helvetica, Arial, sans-serif;
+  font-family: "OpenSans","Iran", Helvetica, Arial, sans-serif;
   margin: 0;
   font-weight: normal;
 }
@@ -69,14 +84,14 @@ h3 {font-size: 1.414rem;
 
 
 p{
-  font-family: "ArazGholami", Helvetica, Arial, sans-serif;
+  font-family: "OpenSans","Iran", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.414;
   margin: 0 0 1rem 0;
 }
 
 a{
-  font-family: "ArazGholami", Helvetica, Arial, sans-serif;
+  font-family: "OpenSans","Iran", Helvetica, Arial, sans-serif;
   outline: none;
   &:hover,&:focus,{
     text-decoration: underline;
@@ -89,7 +104,7 @@ a{
 }
 
 div,span,section,input{
-  font-family: "ArazGholami", Helvetica, Arial, sans-serif;
+  font-family: "OpenSans","Iran", Helvetica, Arial, sans-serif;
   font-size: 1rem;
 }
 

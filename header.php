@@ -104,7 +104,7 @@
         </div>
         <div class="collapse navbar-collapse" id="resnavbar">
           <ul class="nav navbar-nav">
-            <li class="navitem first <?php echo is_home() ? "active":"";  ?>"><a href="<?php bloginfo('home'); ?>"><i class="icon-logo"></i><span class="hidden">Home</span></a></li>
+            <li class="navitem first <?php echo is_home() ? "active":"";  ?>"><a href="<?php bloginfo('home'); ?>"><i class="icon-home"></i><span class="hidden">Home</span></a></li>
             <?php
                $topMenu = wp_get_nav_menu_items(get_nav_menu_locations()[top]);
                 foreach ($topMenu as $item){
