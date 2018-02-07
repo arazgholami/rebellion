@@ -42,6 +42,14 @@
 			    text-decoration: none;
 			}
 		}
+        @media (max-width: 320px){
+            width: 100% !important;
+            height: 100% !important;
+            .gallery-item{
+		        width: 100% !important;
+                height: 100% !important;
+            }
+        }
 	}
 }
 
