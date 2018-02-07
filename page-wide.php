@@ -18,7 +18,9 @@ get_header(); ?>
                                   else{ $continue='Read full article';}
 
                                   the_content($continue);
-
+                                 
+                                  $link=get_edit_post_link( $id, $context ); 
+								  if($link){ echo "<a href='$link'>Edit</a>"; }
                                 ?>
                             </div>
                         <?php endwhile; ?>
