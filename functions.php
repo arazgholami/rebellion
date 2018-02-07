@@ -13,6 +13,7 @@ include('functions/menus.php');
 include('functions/isRTL.php');
 include('functions/continue.php');
 include('functions/comments.php');
+include('functions/htmlmodernizer.php');
 
 
 include('functions/options.php');
