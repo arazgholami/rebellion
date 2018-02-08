@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-            <div class="posts col-lg-16 col-md-16 col-sm-24">
+            <div class="posts col-lg-24 col-md-24 col-sm-24">
                 <section class="item">
                     <?php if ( have_posts() ) : ?>
                         <?php while ( have_posts() ) : the_post(); ?>
