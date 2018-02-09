@@ -19,6 +19,10 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
+update_option( 'thumbnail_size_w', 360 );
+update_option( 'thumbnail_size_h', 360 );
+update_option( 'thumbnail_crop', 1 );
+
 remove_shortcode('gallery', 'gallery_shortcode');
 add_shortcode('gallery', 'neo_gallery_shortcode');
 function neo_gallery_shortcode($attr) {
@@ -35,12 +39,15 @@ function neo_gallery_shortcode($attr) {
     if($attr['orderby'] == 'rand') {
         shuffle($posts); 
     } 
+    
     foreach($posts as $imagePost){
           $caption= wp_get_attachment_caption($imagePost->ID);
           $output .= "
           <a href='".get_attachment_link($imagePost->ID)."'>
             <div class='gallery-item'>
+              
               <img src='".wp_get_attachment_image_src($imagePost->ID, 'thumbnail')[0]."'>
+              
             </div>";
           if($caption){$output .= "<span>".$caption."</span>";}      
           $output .= "</a>";
