@@ -12,8 +12,13 @@
 		}
 	}
 	.copyright{
-		float: left;
 		margin-right: 10px;
+        img{
+            float: left;
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
 		i{
 			display: block;
 			font-size: 0.778rem;

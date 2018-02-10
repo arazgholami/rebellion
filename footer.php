@@ -7,7 +7,9 @@
                         }
                     ?>
 				</ul>
-                <div class="copyright">No Copyright. <i><?php echo status(); ?></i></div>
+                <div class="copyright">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/nazar-amulet.png" alt="Nazar Amulet">
+                No Copyright. <i><?php echo status(); ?></i></div>
             </div>
         </div>
     </div>
