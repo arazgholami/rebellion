@@ -14,7 +14,7 @@ Araz Gholami
 <https://arazgholami.com>
 
 ## License
-GPL v3.0
+Rebellion is licensed under The MIT License. Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the final products. But you always need to state that Araz Gholami is the original author of this theme.
 
 ## Contact
 Araz Gholami contact@arazgholami.com 
